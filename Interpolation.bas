@@ -83,10 +83,10 @@ Public Function Interp2(xAxis As Range, yAxis As Range, zSurface As Range, xcoor
     
     Dim fQ11, fQ21, fQ12, fQ22 As Double
     
-    fQ11 = zArr(lx, ly)
-    fQ21 = zArr(ux, ly)
-    fQ12 = zArr(lx, uy)
-    fQ22 = zArr(ux, uy)
+    fQ11 = zArr(ly, lx)
+    fQ21 = zArr(ly, ux)
+    fQ12 = zArr(uy, lx)
+    fQ22 = zArr(uy, ux)
     
     'if point exactly found on a node do not interpolate
     If ((lx = ux) And (ly = uy)) Then
